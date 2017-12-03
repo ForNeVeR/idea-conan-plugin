@@ -1,0 +1,5 @@
+skip_branch_with_pr: true
+build_script: gradlew check
+
+cache:
+  - C:\Users\appveyor\.gradle
