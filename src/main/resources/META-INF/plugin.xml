@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>me.fornever.idea.conan</id>
+    <name>Conan Support for IDEA</name>
+    <version>0.0.1</version>
+    <vendor email="friedrich@fornever.me" url="https://fornever.me/">Friedrich von Never</vendor>
+
+    <description><![CDATA[
+      A plugin for integration of IDEA with <a href="https://www.conan.io/">Conan</a> C/C++ package manager.<br/>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Release 0.0.1: Initial release.<br>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="162"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <group id="Conan.MainMenu" text="Conan" description="Conan Plugin Menu">
+            <add-to-group group-id="MainMenu" anchor="last" />
+            <action id="Conan.Hello" class="me.fornever.idea.conan.HelloAction" text="Greeting" description="Shows a greeting" />
+        </group>
+    </actions>
+</idea-plugin>

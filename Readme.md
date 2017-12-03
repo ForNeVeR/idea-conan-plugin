@@ -16,6 +16,24 @@ To build the project, use the following command:
 $ ./gradlew build
 ```
 
+Automatic tests
+---------------
+
+To perform the automatic tests, use the following command:
+
+```console
+$ ./gradlew check
+```
+
+Run in a sandbox environment
+----------------------------
+
+To run the plugin in a local sandbox environment, use the following command:
+
+```console
+$ ./gradlew runIde
+```
+
 [build-appveyor]: https://ci.appveyor.com/project/ForNeVeR/idea-conan-plugin/branch/master
 [build-travis]:https://travis-ci.org/ForNeVeR/idea-conan-plugin
 [conan]: https://www.conan.io/
